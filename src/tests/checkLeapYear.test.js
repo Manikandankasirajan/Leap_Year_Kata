@@ -50,3 +50,12 @@ describe("test cases for non leap years", () => {
 		expect(checkLeapYear(year)).toBe("Not Leap Year");
 	});
 });
+
+describe("test cases for invalid inputs", () => {
+	test("throw error for invalid input", () => {
+		const year = "abcd";
+		expect(() => checkLeapYear(year)).toThrow();
+		expect(() => checkLeapYear(year)).toThrow(TypeError);
+		expect(() => checkLeapYear(year)).toThrow("Invalid Input Type");
+	});
+});
