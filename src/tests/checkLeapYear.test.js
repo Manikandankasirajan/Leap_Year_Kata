@@ -12,3 +12,8 @@ test("return 'Leap Year' for 2008", () => {
 	const year = 2008;
 	expect(checkLeapYear(year)).toBe("Leap Year");
 });
+
+test("return 'Not Leap Year' for 2017", () => {
+	const year = 2017;
+	expect(checkLeapYear(year)).toBe("Not Leap Year");
+});
